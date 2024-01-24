@@ -26,7 +26,7 @@ Download Petalinux installer 2021.2 from AMD
 Use [Petalinux Install Manual](https://docs.xilinx.com/r/2021.2-English/ug1144-petalinux-tools-reference-guide/Installing-the-PetaLinux-Tool)
 
 In a nutshell Ubuntu procedure as follows:
-'''
+```
 sudo mkdir /opt/petalinux
 sudo apt install net-tools xterm autoconf libtool texinfo zlib1g-dev gcc-multilib zlib1g:i386 gawk build-essential
 bash ./petalinux-v2021.2-final-installer.run -p aarch64 -d /opt/petalinux/2021.2/
@@ -41,10 +41,11 @@ cd ./build/
 petalinux-build
 cd ..
 petalinux-package --boot --fsbl images/linux/zynqmp_fsbl.elf --u-boot images/linux/u-boot.elf --pmufw images/linux/pmufw.elf --fpga images/linux/system.bit --force
-'''
+```
 
 ### Create an SD card
 create SD card with fat32 and ext4 partitions
 put boot files on fat32
 unarchive rootfs (choices are ADI kuiper, UltraScale Ubuntu or Petalinux build) on ext4
+
 
