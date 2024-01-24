@@ -13,12 +13,12 @@ git clone --recursive ...
 
 ### Build Bitsream, Device Tree and BIN files
 Install Vivado/Vitis 2021.2.
-'''
+```
 $ cd ~/git/hdl_2021_r2/projects/fmcomms2/zcu104/
 $ make
 $ cd ~/git/hdl_2021_r2/projects/fmcomms2/zcu104/devtree/
 $ ./make_devtree.sh
-'''
+```
 BIN file will be in devtree/ folder.
 
 ### Build with Petalinux
