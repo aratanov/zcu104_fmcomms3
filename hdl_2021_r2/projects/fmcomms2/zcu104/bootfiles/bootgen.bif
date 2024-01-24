@@ -1,0 +1,9 @@
+the_ROM_image:
+{
+	[bootloader, destination_cpu=a53-0] /home/user/petawork/xilinx-zcu104-2021.2/images/linux/zynqmp_fsbl.elf
+	[pmufw_image] /home/user/petawork/xilinx-zcu104-2021.2/images/linux/pmufw.elf
+	[destination_device=pl] /home/user/git/zynq_timestamping_104/projects/zcu104/vivado_prj/vivado_prj.runs/impl_1/system_top.bit
+	[destination_cpu=a53-0, exception_level=el-3, trustzone] /home/user/petawork/xilinx-zcu104-2021.2/images/linux/bl31.elf
+	[destination_cpu=a53-0, load=0x00100000] /home/user/petawork/xilinx-zcu104-2021.2/images/linux/system.dtb
+	[destination_cpu=a53-0, exception_level=el-2] /home/user/petawork/xilinx-zcu104-2021.2/images/linux/u-boot.elf
+}

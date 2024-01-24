@@ -1,0 +1,8 @@
+[submodule "device-tree-xlnx_v2021.2"]
+	path = device-tree-xlnx_v2021.2
+	url = https://github.com/xilinx/device-tree-xlnx
+	branch = xlnx_rel_v2021.2
+[submodule "meta-adi_2021_r2"]
+	path = meta-adi_2021_r2
+	url = https://github.com/analogdevicesinc/meta-adi
+	branch = 2021_R2
