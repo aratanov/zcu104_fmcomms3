@@ -4,7 +4,9 @@ Release baseline version is 2021.2.
 Version is applicable to Xilinx Vitis/Vivado distribution, Ananlog Devices library and Xilinx Petalinux.
 
 Repository contains module links to other repo so clone recursively.
-  git clone --recursive ...
+```
+$ git clone --recursive ...
+```
 
 3 parts/folders containing updated code:
 - ADI hdl library
@@ -25,7 +27,7 @@ BIN file will be in devtree/ folder.
 Download Petalinux installer 2021.2 from AMD.<br>
 Use [Petalinux Install Manual](https://docs.xilinx.com/r/2021.2-English/ug1144-petalinux-tools-reference-guide/Installing-the-PetaLinux-Tool)
 
-In a nutshell Ubuntu procedure more or less is as follows:
+In a nutshell Ubuntu procedure, more or less, is as follows:
 ```
 sudo mkdir /opt/petalinux
 sudo apt install net-tools xterm autoconf libtool texinfo zlib1g-dev gcc-multilib zlib1g:i386 gawk build-essential
