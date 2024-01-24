@@ -1,15 +1,15 @@
-# Porting [AnalogDevices' ZCU102 HDL code](https://github.com/analogdevicesinc/hdl) to AMD/Xilinx ZCU104 board
+# Porting AnalogDevices' ZCU102 [HDL code](https://github.com/analogdevicesinc/hdl) to AMD/Xilinx ZCU104 board
 
 Release baseline version is 2021.2.
 Version is applicable to Xilinx Vitis/Vivado distribution, Ananlog Devices library and Xilinx Petalinux.
 
 Repository contains module links to other repo so clone recursively.
-git clone --recursive ...
+  git clone --recursive ...
 
-3 parts/folders containing updated code
-  ADI hdl library
-  meta layer for petalinux (tbc)
-  device tree configuration (tbc)
+3 parts/folders containing updated code:
+- ADI hdl library
+- meta layer for petalinux (tbc)
+- device tree configuration (tbc)
 
 ### Build Bitsream, Device Tree and BIN files
 Install Vivado/Vitis 2021.2.
@@ -25,7 +25,7 @@ BIN file will be in devtree/ folder.
 Download Petalinux installer 2021.2 from AMD
 Use [Petalinux Install Manual](https://docs.xilinx.com/r/2021.2-English/ug1144-petalinux-tools-reference-guide/Installing-the-PetaLinux-Tool)
 
-In a nutshell Ubuntu procedure as follows:
+In a nutshell Ubuntu procedure more or less is as follows:
 ```
 sudo mkdir /opt/petalinux
 sudo apt install net-tools xterm autoconf libtool texinfo zlib1g-dev gcc-multilib zlib1g:i386 gawk build-essential
@@ -44,8 +44,7 @@ petalinux-package --boot --fsbl images/linux/zynqmp_fsbl.elf --u-boot images/lin
 ```
 
 ### Create an SD card
-create SD card with fat32 and ext4 partitions
-put boot files on fat32
-unarchive rootfs (choices are ADI kuiper, UltraScale Ubuntu or Petalinux build) on ext4
-
+- create SD card with fat32 and ext4 partitions
+- put boot files on fat32
+- unarchive rootfs (choices are ADI kuiper, UltraScale Ubuntu or Petalinux build) on ext4
 
