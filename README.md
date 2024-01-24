@@ -22,7 +22,7 @@ $ ./make_devtree.sh
 BIN file will be in devtree/ folder.
 
 ### Build with Petalinux
-Download Petalinux installer 2021.2 from AMD.
+Download Petalinux installer 2021.2 from AMD.<br>
 Use [Petalinux Install Manual](https://docs.xilinx.com/r/2021.2-English/ug1144-petalinux-tools-reference-guide/Installing-the-PetaLinux-Tool)
 
 In a nutshell Ubuntu procedure more or less is as follows:
