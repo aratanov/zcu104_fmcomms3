@@ -1,0 +1,5 @@
+3 parts/folders, all licenced by their respective creators:
+- ADI hdl library - https://github.com/analogdevicesinc/hdl
+- meta layer for petalinux - https://github.com/analogdevicesinc/meta-adi
+- device tree configuration - https://github.com/xilinx/device-tree-xlnx
+
