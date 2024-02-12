@@ -8,7 +8,7 @@ Repository contains module links to other repo so clone recursively.
 $ git clone --recursive ...
 ```
 
-3 parts/folders containing updated code:
+3 parts/folders containing updated code, all licenced by their respective creators:
 - ADI hdl library
 - meta layer for petalinux (tbc)
 - device tree configuration (tbc)
