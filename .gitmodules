@@ -6,3 +6,7 @@
 	path = meta-adi_2021_r2
 	url = https://github.com/analogdevicesinc/meta-adi
 	branch = 2021_R2
+[submodule "hdl_2021_r2"]
+	path = hdl_2021_r2
+	url = https://github.com/aratanov/hdl_zcu104
+	branch = 2021_R2
